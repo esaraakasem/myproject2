@@ -1,0 +1,49 @@
+.main-nav{
+  position: relative;
+  .bg-white;
+  border: 0;
+  border-bottom: 5px solid @green;
+  .navbar-brand{
+    height: auto;
+    position: absolute;
+    top: 0;
+    height: auto;
+    z-index: 999;
+    padding: 0;
+  }
+  
+  .nav.navbar-nav{
+    li{
+      a{
+        font-size: 14px;
+        color: #595d5e;
+        position: relative;
+        padding: 30px 10px;
+        .transition;
+        z-index: 22;
+        &:after{
+          position: absolute;
+          content: "";
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 0;
+          width: 100%;
+          visibility: hidden;
+          background: @green;
+          z-index: -1;
+        }
+        &:hover{
+          color: @white;
+          .transition;
+          &:after{
+            height: 100%;
+            visibility: visible;
+            .transition;
+          }
+        }
+      }
+    }
+  }
+}

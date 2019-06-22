@@ -1,0 +1,149 @@
+@media (max-width:991px) {
+  .navbar-toggle {
+    display: block;
+    margin: 70px 0 0;
+    box-shadow: none;
+    color: @white;
+    background: @green;
+    &:hover,
+    &:focus {
+      background: @green !important;
+    }
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: @white;
+  }
+  .navbar-collapse.collapse,
+  .rtl .navbar-collapse.collapse {
+    display: none!important;
+    border: 0;
+    box-shadow: none;
+  }
+  .navbar-nav,
+  .rtl .navbar-nav {
+    float: none!important;
+    .no-margin;
+    padding-top: 50px;
+  }
+  .navbar.navbar-default.main-nav {
+    .nav.navbar-nav {
+      .no-margin-right;
+      .margin-bottom-20;
+      padding-top: 0;
+      text-align: center;
+      li {
+        margin: 5px 0;
+        width: 100%;
+        display: block;
+        a {
+          padding: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .navbar-nav>li,
+  .rtl .navbar-nav>li {
+    float: none;
+    a {
+      padding: 10px 0;
+    }
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+}
+
+@media (max-width:767px) {
+  .main-nav{
+    .navbar-brand{
+      position: relative;
+      padding: 15px;
+      img{
+        height:130px;
+      }
+    }
+  }
+  .main-slider {
+    .owl-carousel {
+      .item {
+        img {
+          height: 400px;
+        }
+        .caption {
+          top: 70px;
+          h1 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 24px;
+          }
+          
+        }
+      }
+    }
+    .owl-nav {
+      top: auto;
+      bottom: 20px;
+      width:75px;
+      .owl-prev,
+      .owl-next {
+        font-size: 40px;
+      }
+      .owl-prev {
+        margin-left: 0;
+      }
+      .owl-next {
+        margin-right: 0;
+      }
+    }
+  }
+  .home-about {
+    &:before {
+      content: none;
+    }
+  }
+  .project-video{
+    iframe{
+      height: 400px;
+    }
+  }
+  .inner-content .breadcrumb{
+    padding: 10px 15px;
+  }
+  .register form .form-group select{
+    margin-bottom: 10px;
+  }
+  .view-widget .info{
+    .date,.share{
+      float: none;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  .top-footer{
+    .footer-logo{
+      margin-bottom: 20px;
+    }
+    &:after{
+      content: none;
+    }
+  }
+  .media{
+    .media-left{
+      display: block;
+      float: none;
+      text-align: center;
+      padding: 0;
+      img{
+        margin: 0 auto 20px;
+      }
+    }
+    .media-body{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width:480px) {}
